@@ -1,0 +1,25 @@
+name: Bug
+description: A message is accepted or rejected incorrectly
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The tag, the wire bytes, and the error code.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: A short program is more useful than a paragraph.
+    validations:
+      required: true
+  - type: input
+    id: compiler
+    attributes:
+      label: Compiler
+      placeholder: g++ 12, -std=c++17
+    validations:
+      required: true
